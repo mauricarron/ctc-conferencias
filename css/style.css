@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap");
+/* 
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Oswald', sans-serif;
+
+    font-family: 'PT Sans', sans-serif; //Para el nobmre de la pagina.
+*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+/* GLOBALES */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h1.site-name {
+  font-family: "PT Sans", sans-serif;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.txt-center {
+  text-align: center;
+}
