@@ -7,6 +7,13 @@
     font-family: 'PT Sans', sans-serif; //Para el nobmre de la pagina.
 */
 
+/** VARIABLES **/
+:root {
+  --principal: #f34918;
+  --light: #f2f2f2;
+  --dark: #353535;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1rem = 10px */
@@ -21,7 +28,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.6rem;
-  line-height: 2;
+  background-color: var(--light);
 }
 
 /* GLOBALES */
@@ -34,10 +41,6 @@ h4 {
 
 h1 {
   font-size: 4.8rem;
-}
-
-h1.site-name {
-  font-family: "PT Sans", sans-serif;
 }
 
 h2 {
@@ -62,6 +65,167 @@ img {
   max-width: 1200px;
 }
 
-.txt-center {
+.section {
+  padding: 2rem 0rem;
   text-align: center;
+}
+
+/** HEADER **/
+.hero {
+  height: 100vh;
+  background-image: url("../assets/img/encabezado.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  color: #ffffff;
+}
+
+.header-content .socials {
+  margin-bottom: 2rem;
+}
+
+.header-content .socials a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 3rem;
+}
+
+.header-content .socials a:last-of-type {
+  margin-right: 0rem;
+}
+
+.info-evento {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.info-evento p {
+  flex-basis: calc(50% - 1rem);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.info-evento p:last-of-type {
+  text-align: right;
+}
+
+.info-evento p span {
+  margin-right: 1rem;
+  font-size: 3rem;
+  color: var(--principal);
+}
+
+.header-content .site-name {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 11vw;
+  text-transform: uppercase;
+}
+
+.header-content .slogan {
+  font-size: 2.2rem;
+  text-transform: lowercase;
+}
+
+.header-content .slogan span {
+  font-weight: bold;
+}
+
+/** NAVBAR **/
+.site-navbar {
+  background-color: var(--dark);
+}
+
+.nav-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .nav-content {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+label.nav-toggler {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  label.nav-toggler {
+    display: none;
+  }
+}
+
+input#nav-toggler {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+
+  input#nav-toggler:checked + .nav {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav a:last-of-type {
+    color: var(--principal);
+    border: 3px solid var(--principal);
+  }
+
+  .nav a:last-of-type:hover {
+    background-color: var(--principal);
+    color: #ffffff;
+  }
+}
+
+.nav a {
+  padding: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav a:hover {
+  color: var(--principal);
+}
+
+/** SECTION DESCRIPCION DEL EVENTO **/
+.section h2 {
+  text-transform: uppercase;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+  height: 3rem;
+  background-image: url("../assets/img/separador.png");
+}
+
+.section p {
+  font-size: 1.8rem;
+  line-height: 2;
 }
