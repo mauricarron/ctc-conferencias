@@ -229,3 +229,115 @@ input#nav-toggler {
   font-size: 1.8rem;
   line-height: 2;
 }
+
+/** SECTION TALLERES**/
+.site-info {
+  position: relative;
+  padding: 0;
+}
+
+.bg-video {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.info-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgba(256, 256, 256, 0.8);
+}
+
+@media (min-width: 992px) {
+  .info-content {
+    width: 40%;
+    margin: 5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .info-content {
+    width: 60%;
+    margin: 5rem;
+  }
+}
+
+.nav-evento {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--principal);
+}
+
+.nav-evento a {
+  padding: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-evento a span {
+  color: var(--principal);
+}
+
+@media (min-width: 768px) {
+  .nav-evento a {
+    font-size: 2rem;
+  }
+}
+
+.detalle-evento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid var(--dark);
+}
+
+@media (min-width: 768px) {
+  .detalle-evento {
+    align-items: flex-start;
+  }
+}
+
+.detalle-evento:nth-child(2) {
+  border: none;
+}
+
+.detalle-evento h3 {
+  color: var(--principal);
+}
+
+.detalle-evento p {
+  font-size: 2rem;
+  margin: 0rem;
+}
+
+.detalle-evento p:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.detalle-evento p span {
+  margin-right: 1rem;
+  color: var(--principal);
+}
+
+.btn-ver-todos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  display: inline-block;
+  padding: 2rem 5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--principal);
+  color: #ffffff;
+}
